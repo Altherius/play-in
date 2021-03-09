@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sign up - {{ parent() }}{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+
+    {{ form_rest(form) }}
+    <button type="submit">Valider</button>
+    {{ form_end(form) }}
+{% endblock %}
